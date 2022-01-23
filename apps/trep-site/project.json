@@ -1,0 +1,94 @@
+{
+  "projectType": "application",
+  "root": "apps/trep-site",
+  "sourceRoot": "apps/trep-site/src",
+  "prefix": "cesare-monorepo",
+  "targets": {
+    "build": {
+      "executor": "@angular-devkit/build-angular:browser",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/apps/trep-site",
+        "index": "apps/trep-site/src/index.html",
+        "main": "apps/trep-site/src/main.ts",
+        "polyfills": "apps/trep-site/src/polyfills.ts",
+        "tsConfig": "apps/trep-site/tsconfig.app.json",
+        "inlineStyleLanguage": "scss",
+        "assets": [
+          "apps/trep-site/src/favicon.ico",
+          "apps/trep-site/src/assets"
+        ],
+        "styles": ["apps/trep-site/src/styles.scss"],
+        "scripts": []
+      },
+      "configurations": {
+        "production": {
+          "budgets": [
+            {
+              "type": "initial",
+              "maximumWarning": "500kb",
+              "maximumError": "1mb"
+            },
+            {
+              "type": "anyComponentStyle",
+              "maximumWarning": "2kb",
+              "maximumError": "4kb"
+            }
+          ],
+          "fileReplacements": [
+            {
+              "replace": "apps/trep-site/src/environments/environment.ts",
+              "with": "apps/trep-site/src/environments/environment.prod.ts"
+            }
+          ],
+          "outputHashing": "all"
+        },
+        "development": {
+          "buildOptimizer": false,
+          "optimization": false,
+          "vendorChunk": true,
+          "extractLicenses": false,
+          "sourceMap": true,
+          "namedChunks": true
+        }
+      },
+      "defaultConfiguration": "production"
+    },
+    "serve": {
+      "executor": "@angular-devkit/build-angular:dev-server",
+      "configurations": {
+        "production": {
+          "browserTarget": "trep-site:build:production"
+        },
+        "development": {
+          "browserTarget": "trep-site:build:development"
+        }
+      },
+      "defaultConfiguration": "development"
+    },
+    "extract-i18n": {
+      "executor": "@angular-devkit/build-angular:extract-i18n",
+      "options": {
+        "browserTarget": "trep-site:build"
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "apps/trep-site/src/**/*.ts",
+          "apps/trep-site/src/**/*.html"
+        ]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/apps/trep-site"],
+      "options": {
+        "jestConfig": "apps/trep-site/jest.config.js",
+        "passWithNoTests": true
+      }
+    }
+  },
+  "tags": []
+}

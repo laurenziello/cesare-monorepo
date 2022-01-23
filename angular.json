@@ -4,6 +4,8 @@
     "api": "apps/api",
     "api-interfaces": "libs/api-interfaces",
     "main-site": "apps/main-site",
-    "main-site-e2e": "apps/main-site-e2e"
+    "main-site-e2e": "apps/main-site-e2e",
+    "trep-site": "apps/trep-site",
+    "trep-site-e2e": "apps/trep-site-e2e"
   }
 }

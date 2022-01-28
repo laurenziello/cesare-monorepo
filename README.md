@@ -111,3 +111,5 @@ Visit [Nx Cloud](https://nx.app/) to learn more.
 > npm install @angular/material
 
 > nx g @angular/material:ng-add
+
+> nx g @angular/material:ng-add --project=trep-site

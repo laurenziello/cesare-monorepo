@@ -18,7 +18,10 @@
           "apps/main-site/src/favicon.ico",
           "apps/main-site/src/assets"
         ],
-        "styles": ["apps/main-site/src/styles.scss"],
+        "styles": [
+          "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
+          "apps/main-site/src/styles.scss"
+        ],
         "scripts": []
       },
       "configurations": {

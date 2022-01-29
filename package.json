@@ -10,8 +10,7 @@
     "test": "nx test",
     "serve:api": "nx run api:serve",
     "serve:web": "ng serve --open",
-    "serve:all": "concurrently \"npm run serve:api\" \"npm run serve:web\"",
-    "nxaddangularapp": " nx g @nrwl/angular:application trep-site"
+    "serve:all": "concurrently \"npm run serve:api\" \"npm run serve:web\""
   },
   "private": true,
   "dependencies": {

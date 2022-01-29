@@ -104,9 +104,9 @@ Teams using Nx gain the advantage of building full-stack applications with their
 
 Visit [Nx Cloud](https://nx.app/) to learn more.
 
-> nx g @nrwl/angular:application trep-site
-
 > npm list -g --depth=0
+
+> nx g @nrwl/angular:application trep-site
 
 > npm install @angular/material
 

@@ -113,3 +113,9 @@ Visit [Nx Cloud](https://nx.app/) to learn more.
 > nx g @angular/material:ng-add
 
 > nx g @angular/material:ng-add --project=trep-site
+
+> npm install @ngrx/store
+
+> nx g @ngrx/store:ng-add
+
+> nx g @ngrx/store:ng-add --project=trep-site

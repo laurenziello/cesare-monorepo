@@ -108,6 +108,8 @@ Visit [Nx Cloud](https://nx.app/) to learn more.
 
 > nx g @nrwl/angular:application trep-site
 
+> nx g @nrwl/angular:lib libName
+
 > npm install @angular/material
 
 > nx g @angular/material:ng-add
@@ -119,3 +121,5 @@ Visit [Nx Cloud](https://nx.app/) to learn more.
 > nx g @ngrx/store:ng-add
 
 > nx g @ngrx/store:ng-add --project=trep-site
+
+> nx g @nrwl/angular:service widgets --project=core-data -d

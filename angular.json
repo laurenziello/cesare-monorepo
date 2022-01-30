@@ -3,10 +3,13 @@
   "projects": {
     "api": "apps/api",
     "api-interfaces": "libs/api-interfaces",
+    "core-data": "libs/core-data",
+    "core-state": "libs/core-state",
     "dashboard": "apps/dashboard",
     "dashboard-e2e": "apps/dashboard-e2e",
     "main-site": "apps/main-site",
     "main-site-e2e": "apps/main-site-e2e",
+    "material": "libs/material",
     "trep-site": "apps/trep-site",
     "trep-site-e2e": "apps/trep-site-e2e"
   }

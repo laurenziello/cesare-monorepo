@@ -15,7 +15,10 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@cesare-monorepo/api-interfaces": ["libs/api-interfaces/src/index.ts"]
+      "@cesare-monorepo/api-interfaces": ["libs/api-interfaces/src/index.ts"],
+      "@cesare-monorepo/core-data": ["libs/core-data/src/index.ts"],
+      "@cesare-monorepo/core-state": ["libs/core-state/src/index.ts"],
+      "@cesare-monorepo/material": ["libs/material/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

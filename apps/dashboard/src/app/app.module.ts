@@ -7,9 +7,12 @@ import { RouterModule } from '@angular/router';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { StoreModule } from '@ngrx/store';
 import { RoutingModule } from './routing.module';
+import { WidgetsComponent } from './widgets/widgets.component';
+import { WidgetsListComponent } from './widgets/widgets-list/widgets-list.component';
+import { WidgetsDetailsComponent } from './widgets/widgets-details/widgets-details.component';
 
 @NgModule({
-  declarations: [AppComponent, NxWelcomeComponent],
+  declarations: [AppComponent, NxWelcomeComponent, WidgetsComponent, WidgetsListComponent, WidgetsDetailsComponent],
   imports: [
     BrowserModule,
     RouterModule.forRoot([], { initialNavigation: 'enabledBlocking' }),

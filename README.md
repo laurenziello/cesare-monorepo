@@ -124,4 +124,6 @@ Visit [Nx Cloud](https://nx.app/) to learn more.
 
 > nx g @nrwl/angular:service widgets --project=core-data -d
 
->nx g @nrwl/angular:module routing --flat=true --project=dashboard -m=app.module.ts
+> nx g @nrwl/angular:module routing --flat=true --project=dashboard -m=app.module.ts
+
+> nx g @nrwl/angular:component widgets --project=dashboard -m=app.module.ts

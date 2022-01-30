@@ -6,6 +6,7 @@ import { NxWelcomeComponent } from './nx-welcome.component';
 import { RouterModule } from '@angular/router';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { StoreModule } from '@ngrx/store';
+import { RoutingModule } from './routing.module';
 
 @NgModule({
   declarations: [AppComponent, NxWelcomeComponent],
@@ -14,6 +15,7 @@ import { StoreModule } from '@ngrx/store';
     RouterModule.forRoot([], { initialNavigation: 'enabledBlocking' }),
     BrowserAnimationsModule,
     StoreModule.forRoot({}, {}),
+    RoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

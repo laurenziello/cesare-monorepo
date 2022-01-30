@@ -123,3 +123,5 @@ Visit [Nx Cloud](https://nx.app/) to learn more.
 > nx g @ngrx/store:ng-add --project=trep-site
 
 > nx g @nrwl/angular:service widgets --project=core-data -d
+
+>nx g @nrwl/angular:module routing --flat=true --project=dashboard -m=app.module.ts

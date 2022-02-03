@@ -32,12 +32,16 @@
       <button
         [disabled]="form.invalid"
         type="submit"
-        mat-button
+        mat-raised-button
         color="primary"
       >
         Save
       </button>
-      <button type="button" mat-button (click)="form.reset(); cancelled.emit()">
+      <button
+        type="button"
+        mat-raised-button
+        (click)="form.reset(); cancelled.emit()"
+      >
         Cancel
       </button>
     </mat-card-actions>

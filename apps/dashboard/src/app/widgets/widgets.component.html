@@ -1,5 +1,5 @@
 <div class="component-container">
-  <div class="list-component flex-fill">
+  <div class="list-component">
     <cesare-monorepo-widgets-list
       [widgets]="widgets"
       (selected)="selectWidget($event)"
@@ -7,7 +7,7 @@
     >
     </cesare-monorepo-widgets-list>
   </div>
-  <div class="details-component flex-fill">
+  <div class="details-component">
     <cesare-monorepo-widgets-details
       [widget]="selectedWidget"
       (saved)="saveWidget($event)"

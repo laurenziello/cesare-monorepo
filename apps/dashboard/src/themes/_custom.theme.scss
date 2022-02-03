@@ -1,0 +1,13 @@
+@use 'sass:map';
+@use '@angular/material' as mat;
+
+@import '../app/app.theme';
+@import '../app/widgets/widgets.theme';
+
+@mixin custom-theme($theme) {
+  $color-config: mat.get-color-config($theme);
+  @if $color-config != null {
+    @include app-theme($theme);
+    @include widgets-theme($theme);
+  }
+}

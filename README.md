@@ -1,5 +1,3 @@
-
-
 # CesareMonorepo
 
 This project was generated using [Nx](https://nx.dev).
@@ -87,11 +85,6 @@ Run `nx dep-graph` to see a diagram of the dependencies of your projects.
 
 Visit the [Nx Documentation](https://nx.dev/angular) to learn more.
 
-
-
-
-
-
 ## ☁ Nx Cloud
 
 ### Distributed Computation Caching & Distributed Task Execution
@@ -128,4 +121,6 @@ Visit [Nx Cloud](https://nx.app/) to learn more.
 
 > nx g @nrwl/angular:component widgets --project=dashboard -m=app.module.ts
 
-Install extension IntelliJ IDEA ctrl+shift+p organize imports or sort line ascending 
+Install extension IntelliJ IDEA ctrl+shift+p organize imports or sort line ascending
+
+> npm i json-serve --save-dev

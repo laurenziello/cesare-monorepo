@@ -2,7 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Item } from '@cesare-monorepo/api-interfaces';
 
-const API_ENDPOINT = 'http://localhost:3000 ';
+const API_ENDPOINT = 'http://localhost:3000/';
 
 @Injectable({
   providedIn: 'root',

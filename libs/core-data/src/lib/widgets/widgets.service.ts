@@ -1,9 +1,11 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Widget } from '@cesare-monorepo/api-interfaces';
+import { environment } from '@env/environment';
 
-const API_ENDPOINT = 'http://localhost:3000 ';
-
+@Injectable({
+  providedIn: 'root',
+})
 @Injectable({
   providedIn: 'root',
 })
@@ -33,7 +35,7 @@ export class WidgetsService {
   }
 
   private getUrl() {
-    return `${API_ENDPOINT}${this.model}`;
+    return `${environment.apiEndpoint}${this.model}`;
   }
 
   private getUrlWithId(id: string | null) {

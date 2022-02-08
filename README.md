@@ -125,4 +125,9 @@ Install extension IntelliJ IDEA ctrl+shift+p organize imports or sort line ascen
 
 > npm i json-serve --save-dev
 
+---
+
 > npm i uuid
+> npm i @nestjs/mapped-types
+> nx g @nrwl/nest:resource widgets --type=rest --crud=true --project=api
+> comando per creare il 90% delle mie API

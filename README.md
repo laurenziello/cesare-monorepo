@@ -124,3 +124,5 @@ Visit [Nx Cloud](https://nx.app/) to learn more.
 Install extension IntelliJ IDEA ctrl+shift+p organize imports or sort line ascending
 
 > npm i json-serve --save-dev
+
+> npm i uuid

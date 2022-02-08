@@ -13,6 +13,7 @@
     "main-site-e2e": "apps/main-site-e2e",
     "material": "libs/material",
     "trep-site": "apps/trep-site",
-    "trep-site-e2e": "apps/trep-site-e2e"
+    "trep-site-e2e": "apps/trep-site-e2e",
+    "ui": "libs/ui"
   }
 }

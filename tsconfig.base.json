@@ -20,6 +20,7 @@
       "@cesare-monorepo/core-data": ["libs/core-data/src/index.ts"],
       "@cesare-monorepo/core-state": ["libs/core-state/src/index.ts"],
       "@cesare-monorepo/material": ["libs/material/src/index.ts"],
+      "@cesare-monorepo/ui": ["libs/ui/src/index.ts"],
       "@env/*": ["apps/dashboard/src/environments/*"]
     }
   },

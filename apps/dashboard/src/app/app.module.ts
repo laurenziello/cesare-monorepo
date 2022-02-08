@@ -12,6 +12,7 @@ import { RoutingModule } from './routing.module';
 import { WidgetsDetailsComponent } from './widgets/widgets-details/widgets-details.component';
 import { WidgetsListComponent } from './widgets/widgets-list/widgets-list.component';
 import { WidgetsComponent } from './widgets/widgets.component';
+import { UiModule } from '@cesare-monorepo/ui';
 
 @NgModule({
   declarations: [
@@ -30,6 +31,7 @@ import { WidgetsComponent } from './widgets/widgets.component';
     StoreModule.forRoot({}, {}),
     FormsModule,
     HttpClientModule,
+    UiModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

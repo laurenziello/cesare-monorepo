@@ -2,10 +2,11 @@ import { Injectable } from '@nestjs/common';
 import { CreateWidgetDto } from './dto/create-widget.dto';
 import { UpdateWidgetDto } from './dto/update-widget.dto';
 import { Widget } from '@cesare-monorepo/api-interfaces';
+import { v4 as uuidv4 } from 'uuid';
 
 @Injectable()
 export class WidgetsService {
-  widgets: Widget[] = [
+  mockWidgets: Widget[] = [
     {
       id: '1',
       title: 'Nest Widget FTW 01!',
@@ -28,23 +29,29 @@ export class WidgetsService {
     },
   ];
 
-  create(createWidgetDto: CreateWidgetDto) {
-    return 'This action adds a new widget';
-  }
-
   findAll() {
-    return this.widgets;
+    return this.mockWidgets;
   }
 
-  findOne(id: number) {
-    return `This action returns a #${id} widget`;
+  findOne(id: string) {
+    return this.mockWidgets.find((widget) => widget.id === id);
   }
 
-  update(id: number, updateWidgetDto: UpdateWidgetDto) {
-    return `This action updates a #${id} widget`;
+  create(widget: Widget) {
+    this.mockWidgets = [
+      ...this.mockWidgets,
+      Object.assign({}, widget, { id: uuidv4() }),
+    ];
+    return this.mockWidgets;
   }
 
-  remove(id: number) {
-    return `This action removes a #${id} widget`;
+  update(id: string, widget: Widget) {
+    this.mockWidgets = this.mockWidgets.map((w) => (w.id === id ? widget : w));
+    return this.mockWidgets;
+  }
+
+  remove(id: string) {
+    this.mockWidgets = this.mockWidgets.filter((widget) => widget.id !== id);
+    return this.mockWidgets;
   }
 }

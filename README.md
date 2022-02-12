@@ -136,3 +136,7 @@ Install extension IntelliJ IDEA ctrl+shift+p organize imports or sort line ascen
 ---
 
 nx g @nrwl/angular:ngrx --module=apps/dashboard/src/app/app.module.ts --minimal true
+
+nx g @nrwl/angular:ngrx widgets --facade --module=libs/core-state/src/lib/core-state.module.ts --directory widgets --no-interactive
+
+npm i @ngrx/store-devtools

@@ -132,3 +132,7 @@ Install extension IntelliJ IDEA ctrl+shift+p organize imports or sort line ascen
 > nx g @nrwl/nest:resource widgets --type=rest --crud=true --project=api
 > comando per creare il 90% delle mie API
 > npm install --save @nestjs/swagger swagger-ui-express
+
+---
+
+nx g @nrwl/angular:ngrx --module=apps/dashboard/src/app/app.module.ts --minimal true

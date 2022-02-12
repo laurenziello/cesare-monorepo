@@ -13,6 +13,9 @@ import { WidgetsDetailsComponent } from './widgets/widgets-details/widgets-detai
 import { WidgetsListComponent } from './widgets/widgets-list/widgets-list.component';
 import { WidgetsComponent } from './widgets/widgets.component';
 import { UiModule } from '@cesare-monorepo/ui';
+import { EffectsModule } from '@ngrx/effects';
+import { StoreDevtoolsModule } from '@ngrx/store-devtools';
+import { environment } from '../environments/environment';
 
 @NgModule({
   declarations: [
@@ -28,10 +31,21 @@ import { UiModule } from '@cesare-monorepo/ui';
     BrowserModule,
     MaterialModule,
     RoutingModule,
-    StoreModule.forRoot({}, {}),
     FormsModule,
     HttpClientModule,
     UiModule,
+    StoreModule.forRoot(
+      {},
+      {
+        metaReducers: !environment.production ? [] : [],
+        runtimeChecks: {
+          strictActionImmutability: true,
+          strictStateImmutability: true,
+        },
+      }
+    ),
+    EffectsModule.forRoot([]),
+    !environment.production ? StoreDevtoolsModule.instrument() : [],
   ],
   providers: [],
   bootstrap: [AppComponent],
